@@ -1128,6 +1128,22 @@ form.semanticForms:not(.semanticFormsActive) div:not(:has(dd > ul)):has(dd > inp
   margin-top: -2px;
   padding-left: 10px;
 }
+form.semanticForms.lowFlow div:has(dd[class^=align-]),
+form.semanticForms:not(.semanticFormsActive) div:has(dd[class^=align-]) {
+  flex-direction: column;
+}
+form.semanticForms.lowFlow div:has(.align-start),
+form.semanticForms:not(.semanticFormsActive) div:has(.align-start) {
+  align-items: start;
+}
+form.semanticForms.lowFlow div:has(.align-center),
+form.semanticForms:not(.semanticFormsActive) div:has(.align-center) {
+  align-items: center;
+}
+form.semanticForms.lowFlow div:has(.align-end),
+form.semanticForms:not(.semanticFormsActive) div:has(.align-end) {
+  align-items: end;
+}
 form.semanticForms.lowFlow dt,
 form.semanticForms:not(.semanticFormsActive) dt {
   min-width: var(--semanticFormsInputMinWidth); /* this matches the max-width of js-enabled inputs */

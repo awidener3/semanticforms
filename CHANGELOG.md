@@ -1,3 +1,8 @@
+## 5.3.1
+
+- Updated low flow markup in the full demo.
+- Fixed bundling issue.
+
 ## 5.3.0
 
 - Added `align-start`, `align-center`, and `align-end` classes that align form inputs within their available space.

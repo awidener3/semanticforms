@@ -15,6 +15,12 @@
     "docs/statics",
     "*.md"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/semantic-forms.mjs",
+      "require": "./dist/semantic-forms.cjs"
+    }
+  },
   "homepage": "https://rooseveltframework.org/docs/semantic-forms/latest",
   "license": "CC-BY-4.0",
   "main": "semanticForms.js",

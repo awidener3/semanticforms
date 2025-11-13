@@ -35,6 +35,22 @@ form.semanticForms:not(.semanticFormsActive) {
     }
   }
 
+  div:has(dd[class^=align-]) {
+    flex-direction: column;
+  }
+
+  div:has(.align-start) {
+    align-items: start;
+  }
+
+  div:has(.align-center) {
+    align-items: center;
+  }
+
+  div:has(.align-end) {
+    align-items: end;
+  }
+
   dt {
     min-width: var(--semanticFormsInputMinWidth); /* this matches the max-width of js-enabled inputs */
 
